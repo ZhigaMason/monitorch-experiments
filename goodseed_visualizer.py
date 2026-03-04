@@ -40,7 +40,9 @@ class GoodSeedVisualizer(AbstractVisualizer):
         for value_name, value_dict in values_dict.items():
             value_prefix = main_prefix + "/" + value_name
             for stat_name, stat in value_dict.items():
-                stat = stat if np.isfinite(stat) else 0
+                stat = (
+                    stat if np.isfinite(stat) else 0
+                )  # guard against NaNs, see notes4matej.md
                 self.run[value_prefix + "/" + stat_name].log(stat, step=epoch)
 
         for range_name, range_dict in ranges_dict.items():
@@ -91,10 +93,13 @@ class GoodSeedVisualizer(AbstractVisualizer):
 
 
 if __name__ == "__main__":
+    # Class for GoodSeed visualization
     vis = GoodSeedVisualizer(
         hp_dicts={"moments": "default", "lr": 3e-2},
-        run_id="OPT-02",
+        run_id="OPT-03",
     )
+    # Class for debug on monitorch side
+
     # vis = PrintVisualizer()
     player = PlayerVisualizer(
         "experiments/adamw_basic_showcase/logs/adam_lr3e-2_wd0.05_moments-default.pkl",
