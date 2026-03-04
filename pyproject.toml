@@ -1,0 +1,26 @@
+[project]
+name = "monitorch-experiments"
+version = "0.0.0.1"
+readme = "README.md"
+authors = [
+  { name = "Maksym Khavil", email = "mk.khavil@gmail.com" }
+]
+keywords = [
+        "pytorch",
+        "visualization",
+        "neural networks",
+        "gradients"
+]
+license = "MIT"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+requires-python = ">=3.10"
+
+dependencies = [
+  "torch>=2.0.0",
+  "monitorch",
+  "goodseed",
+  "jupyter>=1.1.1",
+]
