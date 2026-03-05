@@ -7,14 +7,14 @@ uv sync
 source .venv/bin/activate
 ```
 
-If you want to run experiments on kaggle or google-colab you need to set authentication variables `.env`.
+If you want to run experiments on kaggle you need to set authentication variables `.env`.
 
 ## Usage
 
 Scripts can be run on locally, on kaggle and google colab. To run locally just execute your script with python from venv
 
 ```bash
-ptyhon path/to/your/script.py
+python path/to/your/script.py
 ```
 
 ### Kaggle
@@ -49,7 +49,15 @@ dotenv run kaggle kernels output your-username/name-of-experiment -p path/to/exp
 
 ### Google Colab
  
-TODO
+Google Colab does not provide an API, thus the best we can offer is to get this module to Colab and run it.
+
+Here is ipynb snippet to copy-paste
+
+```
+!pip install monitorch
+!rm -f monitorch-experiments
+!git clone https://github.com/ZhigaMason/monitorch-experiments.git
+```
 
 ## Project structure
 

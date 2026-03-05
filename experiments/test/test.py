@@ -3,8 +3,11 @@ import sys
 
 from collections import OrderedDict
 
-# Install your required packages
-status = os.system("pip install monitorch")
+try:
+    import monitorch
+except ImportError:
+    # Install your required packages
+    status = os.system("pip install monitorch")
 
 import torch  # noqa: E402
 import torch.nn as nn  # noqa: E402
