@@ -25,19 +25,19 @@ Second you must create directory for your experiment and initialize it with `ker
 
 ```
 mkdir -p path/to/experiment
-dotenv run kaggle kernel init -p path/to/experiment
+dotenv run kaggle kernels init -p path/to/experiment
 ```
 
 After you have configured kernel metadata and experiment script is prepared you can run the experiment.
 
 ```
-dotenv run kaggle kernel push -p path/to/experiment [--accelerator "NvidiaTeslaP100"/"NvidiaTeslaT4"/"TpuV6E8"]
+dotenv run kaggle kernels push -p path/to/experiment [--accelerator "NvidiaTeslaP100"/"NvidiaTeslaT4"/"TpuV6E8"]
 ```
 
 To check on the status use:
 
 ```
-dotenv run kaggle kernel status your-username/name-of-experiment
+dotenv run kaggle kernels status your-username/name-of-experiment
 ```
 
 To download output:
