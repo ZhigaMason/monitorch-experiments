@@ -1,0 +1,12 @@
+config,init_rel_%,forward_rel_%,backward_rel_%,optim_rel_%,tick_rel_%,total_rel_%
+LossMetrics_inplace,1321.31,4.84,1.84,2.17,N/A,4.13
+OutputActivation_inplace,1363.93,19.03,2.14,0.35,N/A,7.58
+OutputGradientGeometry_inplace_corr,2213.11,17.96,99.28,1.12,N/A,75.67
+OutputGradientGeometry_inplace_nocorr,2075.41,17.14,30.98,0.37,N/A,32.63
+OutputNorm_inplace,1427.87,10.87,2.72,1.01,N/A,5.81
+ParameterGradientActivation_inplace,3959.84,2.12,102.28,2.17,N/A,61.75
+ParameterGradientGeometry_inplace_corr,3795.08,2.09,163.71,2.63,N/A,102.81
+ParameterGradientGeometry_inplace_nocorr,3657.38,2.89,37.80,2.63,N/A,26.26
+ParameterNorm_inplace,2218.85,2.42,2.64,0.72,N/A,0.90
+ParameterUpdateGeometry_inplace_corr,2949.18,2.46,2.72,1540.93,N/A,95.21
+ParameterUpdateGeometry_inplace_nocorr,2931.97,2.25,2.16,488.91,N/A,27.03
