@@ -24,7 +24,9 @@ dependencies = [
     "jupyter>=1.1.1",
     "python-dotenv[cli] ~= 1.2.2",
     "kaggle >= 1.8.0",
-    "jupyter ~= 1.1.1",
+    "jupyter >= 1.1.1",
+    "torchvision>=0.26.0",
+    "matplotlib>=3.10.9",
 ]
 
 [tool.ruff]
