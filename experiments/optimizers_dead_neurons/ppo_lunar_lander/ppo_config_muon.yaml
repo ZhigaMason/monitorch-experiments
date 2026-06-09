@@ -1,0 +1,8 @@
+experiment: "ppo_lunarlander"
+seed: 42
+env_id: "LunarLander-v3"
+total_timesteps: 500000
+batch_size: 64
+optimizer: "Muon"
+lr: 0.005
+weight_decay: 0.0

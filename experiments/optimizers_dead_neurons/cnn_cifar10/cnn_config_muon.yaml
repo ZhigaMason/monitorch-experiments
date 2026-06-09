@@ -1,0 +1,7 @@
+experiment: "cnn_cifar10"
+seed: 42
+batch_size: 128
+epochs: 50
+optimizer: "Muon"
+lr: 0.02
+weight_decay: 0.01

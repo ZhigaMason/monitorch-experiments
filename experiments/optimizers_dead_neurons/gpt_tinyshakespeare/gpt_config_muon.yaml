@@ -1,0 +1,12 @@
+experiment: "nanochat_bpe_tiktoken"
+seed: 42
+block_size: 256
+batch_size: 32
+epochs: 2500 
+n_embd: 384
+n_head: 6
+n_layer: 6
+dropout: 0.2
+optimizer: "Muon"
+lr: 0.02
+weight_decay: 0.01

@@ -1,0 +1,10 @@
+experiment: "lstm_melbourne_temps"
+seed: 42
+seq_len: 30
+batch_size: 64
+epochs: 100
+input_size: 1
+hidden_size: 64
+optimizer: "Muon"
+lr: 0.01
+weight_decay: 0.0

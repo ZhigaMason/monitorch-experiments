@@ -1,0 +1,8 @@
+experiment: "sac_bipedalwalker"
+seed: 42
+env_id: "BipedalWalker-v3"
+steps: 100000
+batch_size: 256
+optimizer: "AdamW"
+lr: 0.0003
+weight_decay: 0.0
